@@ -18,11 +18,11 @@ tmpFolder=../../localData/tmp
 
 
 #create tmpFolder
-mkdir ${tmpFolder}
+#mkdir ${tmpFolder}
 
 #first, convert GRDC data to NetCDF. This only needs to be done once. See the seperate
 #repo at https://github.com/RolfHut/GRDC2NetCDF
-python ../GRDC2NetCDF/GRDC2NetCDF.py ${GRDCLocation} daily ${GRDCLocation}testDailyOld.nc 1990-01-01 2000-01-01
+#python ../GRDC2NetCDF/GRDC2NetCDF.py ${GRDCLocation} daily ${tmpFolder}testDailyOld.nc 1990-01-01 2000-01-01
 
 #THIS IS ONLY BECAUSE I DO NOT HAVE THE GRDC DATA YET AND MAKES NO HYDROLOGICAL SENSE
 cdo shifttime,20year ${tmpFolder}/testDailyOld.nc ${tmpFolder}/testDaily.nc
