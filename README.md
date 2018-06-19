@@ -11,6 +11,15 @@ Will include statistical tests to compare and evaluate hydrological models:
 
 * BS: Brier Score
 
+# Install
+
+Requirements:
+
+* Python >=3.5
+* Docker server
+* NumPy (>= 1.8.2)
+* SciPy (>= 0.13.3)
+* [scikit-learn](http://scikit-learn.org/stable/install.html): pip install -U scikit-learn
 
 
 
