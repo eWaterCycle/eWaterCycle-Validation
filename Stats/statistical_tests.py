@@ -28,6 +28,11 @@ def RMSE(simulated_array, observed_array):
 ######################################################################################################
 #                              Nash–Sutcliffe model efficiency coefficient
 ######################################################################################################
+def nse(simulated_array, observed_array):
+    """Nash-Sutcliffe Efficiency Coeff"""
+    a = (np.abs(simulated_array - observed_array)) ** 2
+    b = (np.abs(observed_array - np.mean(observed_array))) ** 2
+    return 1 - (np.sum(a) / np.sum(b))
 
 ######################################################################################################
 #                              R^2 Coefficient
