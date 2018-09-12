@@ -1,8 +1,8 @@
 eWaterCycle-validation
 =============================
 
-Code to validate eWaterCycle output using [GRDC](https://www.bafg.de/GRDC/EN/Home/homepage_node.html) data.
-Will include statistical tests to compare and evaluate hydrological models.
+Package to validate eWaterCycle II output using observations (for example, [GRDC](https://www.bafg.de/GRDC/EN/Home/homepage_node.html)).
+The package will include statistical tests to compare and evaluate hydrological models.
 
 # Preliminary list:  
 
